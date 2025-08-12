@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing Up Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="head">
+      <div class="logo">
+        <img src="img/odin-lined.png" alt="logo de odin" />
+        <h1>ODIN</h1>
+      </div>
+      <div class="fondo">
+        <img src="img/halie-west-25xggax4bSA-unsplash.jpg" alt="fondo" />
+      </div>
+    </header>
+    <main>
+      <div class="form-header">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <p>You know you want to.</p>
+      </div>
+
+      <div class="formulario">
+        <form method="post" action="#">
+          <div class="caja">
+            <h2>Let’s do this!</h2>
+            <div class="campo">
+              <label for="first_name">First name:</label>
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                placeholder="Brian"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="last_name">Last name:</label>
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                placeholder="Castro"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="briancas@example.com"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="telephone_number">Telephone number:</label>
+              <input
+                type="tel"
+                id="telephone_number"
+                placeholder="optional"
+                name="telephone_number"
+                inputmode="numeric"
+              />
+            </div>
+
+            <div class="campo" id="contraseña">
+              <label for="contraseña">Password:</label>
+              <input
+                type="password"
+                id="contraseña"
+                name="contraseña"
+                required
+                minlength="6"
+                maxlength="12"
+              />
+            </div>
+
+            <div class="campo" id="contraseñaConf">
+              <label for="confirm_contra">Confirm password:</label>
+              <input
+                type="password"
+                id="confirm_contra"
+                name="confirm_contra"
+                required
+                minlength="6"
+                maxlength="12"
+              />
+            </div>
+          </div>
+          <button type="submit">Create account</button>
+        </form>
+      </div>
+
+      <p class="login-link">Already have an account? <a href="#">Log in</a></p>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
